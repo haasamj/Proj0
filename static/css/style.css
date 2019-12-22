@@ -1,0 +1,95 @@
+.im {
+    float: left;
+    margin: 20px;
+}
+
+.pro {
+    float:left;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #434e5a;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #434e5a;
+}
+
+.row {
+    margin-top:30px;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+
+.modal-content {
+    background-color: #434e5a;
+    opacity: .8;
+    padding: 0 18px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    padding-top:20px;
+}
+
+.form-group input {
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 54px;
+}
+
+.form-input button {
+    width: 40%;
+    margin: 5px 0 25px;
+}
+
+.btn-success {
+    background-color: #1c6288;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 1px solid #daf1ff;
+}
+
+.btn-success:hover {
+    background-color: #13445e;
+    border: 1px solid #daf1ff;
+}

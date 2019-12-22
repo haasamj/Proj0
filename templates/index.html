@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row text-center text-lg-left">
+        {% for product in products %}
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="{% url 'product:detail' pk=product.pk %}" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="{{ product.product_image.url }}" alt="">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

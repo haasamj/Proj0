@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} Signup {% endblock %}
+
+{% block content %}
+<div class='modal-dialog text-center'>
+    <div class="col-sm-9 main-section">
+        <div class="modal-content">
+            <div class="col-12 form-input">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name='fullname' class="form-control" placeholder="Enter fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name='uname' class="form-control" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name='email' class="form-control" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" pattern="[0-9]{10}" name='telno'
+                            placeholder="Telephone no." required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name='password' minlength="8"
+                            placeholder="Enter password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
